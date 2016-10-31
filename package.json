@@ -1,0 +1,24 @@
+{
+  "name": "webpack-es6-startkit",
+  "version": "1.0.0",
+  "description": "A small demo project that shows how to use webpack for client-side development in ES6.",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --progress --inline --colors",
+    "build": "webpack --config webpack-production.config.js --progress --colors"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.1.1",
+    "node-libs-browser": "^0.5.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1"
+  }
+}
