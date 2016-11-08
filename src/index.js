@@ -1,13 +1,16 @@
-export default function compose(...funcs) {
-  if (funcs.length === 0) {
-    return arg => arg
-  }
+//@flow
 
-  if (funcs.length === 1) {
-    return funcs[0]
-  }
+const obj = {a:1}
 
-  const last = funcs[funcs.length - 1]
-  const rest = funcs.slice(0, -1)
-  return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
+function func(x: number): any {
+  const that = this
+
+  setTimeout(
+    function(){
+      console.log(that)
+    }, 2000)
+
+  return x
 }
+
+func.call(obj, 1) //Object {a: 1}
