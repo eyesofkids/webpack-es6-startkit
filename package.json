@@ -35,7 +35,6 @@
     "eslint": "^3.9.1",
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-plugin-import": "^1.16.0",
-    "node-libs-browser": "^1.0.0",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
