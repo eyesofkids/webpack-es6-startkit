@@ -13,4 +13,4 @@ function func(x: number): any {
   return x
 }
 
-func.call(obj, 1) //Object {a: 1}
+func.call(obj, '123') //Object {a: 1}
