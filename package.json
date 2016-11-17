@@ -8,19 +8,6 @@
   "repository": "eyesofkids/webpack-es6-startkit",
   "author": "Eddy Chang <eddy@joomla.com.tw> (http://eddychang.me)",
   "description": "A startkit for client-side development in ES6.",
-  "babel": {
-    "presets": [
-      "latest",
-      "stage-0"
-    ],
-    "plugins": [
-      "transform-flow-strip-types"
-    ]
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb-base"
-  },
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --inline --colors",
     "build": "webpack --config webpack-production.config.js --progress --colors"
