@@ -5,14 +5,14 @@
     "semi": ["error", "never"]
   },
   "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
+    "jsx": true,
+    "experimentalObjectRestSpread": true
   },
   "env": {
-        "browser": true,
-        "node": true
+    "browser": true,
+    "node": true
   },
   "plugins": [
-        "import"
+    "import"
   ]
 }
