@@ -9,6 +9,6 @@ A small project that shows how to use webpack for client-side development in ECM
 
 ## Usage
 
-* `npm start` and open `http://localhost:3000` in a browser.
-* Change or add files in `src` folder. `index.js` is the entry point.
+* `npm start` and open `http://localhost:3000` in a browser.(now will auto open the browser)
+* Modify or add files in `src` folder. `index.js` is the entry point.
 * `npm run build` to compile ./src file to ./build.

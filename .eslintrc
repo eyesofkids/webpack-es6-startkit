@@ -4,9 +4,11 @@
   "rules": {
     "semi": ["error", "never"]
   },
-  "ecmaFeatures": {
-    "jsx": true,
-    "experimentalObjectRestSpread": true
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false,
+      "experimentalObjectRestSpread": true
+    }
   },
   "env": {
     "browser": true,
