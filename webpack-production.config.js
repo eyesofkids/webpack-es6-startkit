@@ -13,6 +13,12 @@ const config = {
     filename: 'bundle.js', // Name of output file
   },
   plugins: [
+    // for React optimized
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
     // Minify the bundle
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -30,9 +36,9 @@ const config = {
         test: /\.js$/, // All .js files
         loaders: ['babel-loader'], // react-hot is like browser sync and babel loads jsx and es6-7
         exclude: [nodeModulesPath],
-      }
+      },
     ],
   },
-};
+}
 
-module.exports = config;
+module.exports = config
